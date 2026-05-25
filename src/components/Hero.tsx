@@ -53,20 +53,26 @@ export const Hero = () => {
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="max-w-4xl"
+          className="max-w-4xl flex flex-col items-center"
         >
+          <motion.div variants={fadeInUp} className="mb-8 relative w-40 h-40 md:w-48 md:h-48 rounded-full p-1 bg-gradient-to-tr from-premium-red via-premium-gold to-premium-charcoal shadow-[0_0_30px_rgba(214,32,39,0.3)]">
+            <img src="/saroj.png" alt="Saroj Mahato" className="w-full h-full object-cover rounded-full border-4 border-premium-black" />
+          </motion.div>
+
           <motion.div variants={fadeInUp} className="mb-6 inline-flex items-center space-x-2 glass px-4 py-2 rounded-full border border-white/10">
              <Globe2 size={16} className="text-premium-gold" />
-             <span className="text-sm font-medium tracking-widest text-gray-300 uppercase">Global Business Leader</span>
+             <span className="text-sm font-medium tracking-widest text-gray-300 uppercase">Business Growth • Sales Leadership • Strategic Expansion</span>
           </motion.div>
 
           <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
             Saroj <span className="text-premium-red">Mahato</span>
           </motion.h1>
 
-          <motion.div variants={fadeInUp} className="space-y-2 mb-10">
+          <motion.div variants={fadeInUp} className="space-y-4 mb-10 flex flex-col items-center">
             <h2 className="text-2xl md:text-3xl text-gray-300 font-light">Sales Head – Nepal</h2>
-            <h2 className="text-xl md:text-2xl text-premium-gold font-light">Regional Head of Growth – South Asia</h2>
+            <p className="text-lg text-gray-400 font-light max-w-2xl text-center mt-4">
+              Driving business growth, partnerships, and operational excellence across Nepal’s education sector.
+            </p>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
